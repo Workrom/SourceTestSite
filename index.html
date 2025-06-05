@@ -12,6 +12,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=windows1251">
   <meta http-equiv="refresh" content="30">
 
+  <script src="scripts.js" defer></script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -24,20 +26,29 @@
 
     <div>
       <img src="images/main_render2.png" width="100%" alt="top">
-      <a style="position: absolute; width: 100%; height: 100%; left: 0%;top: 109.6%; opacity: 0;" href="source.html"><img src="images/source_mp2.png" width="100%" alt="middle"></a>
+      <a style="position: absolute; width: 100%; height: 100%; left: 0%;top: 109.6%; opacity: 0;"
+        href="source.html"><img src="images/source_mp2.png" width="100%" alt="middle"></a>
       <div class="apng-hover">
-        <a href="source.html"><img style="position: absolute; width: 60%;left: 23.5%; top: 130.5%;" class="animated" src="images/output.apng" alt="apngturret"></a>
-        <a href="source.html"><img style="position: absolute; width: 60%;left: 23.5%; top: 130.5%;" class="static" src="images/staticlaser.png" alt="staticturret"></a>
+        <a href="source.html"><img style="position: absolute; width: 60%;left: 23.5%; top: 130.5%;" class="animated"
+            src="images/output.apng" alt="apngturret"></a>
+        <a href="source.html"><img style="position: absolute; width: 60%;left: 23.5%; top: 130.5%;" class="static"
+            src="images/staticlaser.png" alt="staticturret"></a>
       </div>
-      
     </div>
+
+    <div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+      <button onclick="startSurvey()" class="pseudo-button"><span style="color: black;">Take Survey</span></button>
+    </div>
+
+  <div id="surveyResult" style="margin-top: 20px; color: #e8e1c7; display: flex; justify-content: center;"></div>
+</div>
 
   </main>
   <footer>
     <p>Age Restriction Disclaimer
-    This site discusses and showcases games that are rated 16+ or 18+ by official rating boards such as PEGI and ESRB.
-    Viewer discretion is advised. By using this site, you confirm that you meet the recommended age requirements for
-    viewing such content.</p>
+      This site discusses and showcases games that are rated 16+ or 18+ by official rating boards such as PEGI and ESRB.
+      Viewer discretion is advised. By using this site, you confirm that you meet the recommended age requirements for
+      viewing such content.</p>
   </footer>
 </body>
 

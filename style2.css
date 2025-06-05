@@ -1,0 +1,77 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+form {
+  width: 60%;
+  margin: 30px auto;
+  background-color: #2a2a2a;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 5px;
+  background-color: #3c3c3c;
+  color: white;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #f2a52b;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e69138;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}

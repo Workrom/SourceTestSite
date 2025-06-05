@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Форма відгуку</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a style="color: grey;" href="index.html">Home</a>
+        <a style="color: grey;" href="TOS.html">Site Of Terms</a>
+    </header>
+    <h2>Залиште свій відгук</h2>
+    <form id="feedbackForm" onsubmit="return handleSubmit();">
+        <label>Ім’я:
+            <input type="text" id="name" placeholder="Ваше ім’я" required>
+        </label>
+
+        <label>Вік:
+            <input type="number" id="age" placeholder="Наприклад: 25" min="1" max="120" required>
+        </label>
+
+        <label>Номер телефону:
+            <input type="tel" id="phone" placeholder="+380XXXXXXXXX" pattern="^\+380\d{9}$" required>
+        </label>
+
+        <label>Оцінка сервісу:
+            <input type="radio" name="rating" value="Добре" required> Добре
+            <input type="radio" name="rating" value="Задовільно"> Задовільно
+            <input type="radio" name="rating" value="Погано"> Погано
+        </label>
+
+        <label>Що вам сподобалося?
+            <input type="checkbox" name="likes" value="Інтерфейс"> Інтерфейс
+            <input type="checkbox" name="likes" value="Функціонал"> Функціонал
+            <input type="checkbox" name="likes" value="Швидкодія"> Швидкодія
+        </label>
+
+        <label>Коментар:
+            <textarea id="comment" rows="4" placeholder="Залиште свій коментар..."></textarea>
+        </label>
+
+        <input type="submit" value="Надіслати" class="submit-btn">
+    </form>
+    <div id="submittedData"></div>
+    <script src="scripts.js"></script>
+    <section style="width: auto; margin: 1% 20%;">
+        <footer>
+            <a style="color: #777366;" href="https://developer.valvesoftware.com/wiki/Main_Page">VALVe developer
+                community</a>
+            <a style="color: #c64b54;" href="https://www.valvesoftware.com/en/about">VALVe Corporation</a>
+            <a href="TOS.html">Site terms of use</a>
+        </footer>
+    </section>
+</body>
+
+</html>

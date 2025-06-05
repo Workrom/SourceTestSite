@@ -11,10 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <script src="scripts.js" defer></script>
+
     <title>Source engine</title>
     <meta charset="utf-8" />
-    <meta name="description" lang="en"
-    content="Overviews of the Source game engine and games associated with it">
+    <meta name="description" lang="en" content="Overviews of the Source game engine and games associated with it">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -416,11 +417,15 @@
             <br />
             <form name="test" class="test">
                 <div style="margin-top: 2%;">
-                    <center><b><h1><span style="color: #e69138;">Source Engine</span> <span style="color: #adc9bd">Quiz</span></h1></b></center><br /><br />
+                    <center><b>
+                            <h1><span style="color: #e69138;">Source Engine</span> <span
+                                    style="color: #adc9bd">Quiz</span></h1>
+                        </b></center><br /><br />
                 </div>
                 <div>
                     <ol>
-                        <li><INPUT type="text" size="1" value="" name="T1" /><b> What game engine is <span style="color: #f2a52b;">Source</span> the
+                        <li><INPUT type="text" size="1" value="" name="T1" /><b> What game engine is <span
+                                    style="color: #f2a52b;">Source</span> the
                                 successor
                                 to?</b><br /><br>
                             <input type="radio" value="0" name="Q1" /> <span>Unreal Engine</span><br />
@@ -442,7 +447,8 @@
                         </li>
                         <hr>
                         <br>
-                        <li><INPUT type="text" size="1" value="" name="T3" /><b> What is one reason <span style="color: #f2a52b;">Source</span> is still
+                        <li><INPUT type="text" size="1" value="" name="T3" /><b> What is one reason <span
+                                    style="color: #f2a52b;">Source</span> is still
                                 commonly
                                 used today?</b><br /><br>
                             <input type="radio" value="0" name="Q3" /> It has ray tracing support<br />
@@ -454,7 +460,8 @@
                         <hr>
                         <br>
                         <li><INPUT type="text" size="1" value="" name="T4" /><b> Which fan-made game is being developed
-                                using a custom <span style="color: #f3f3f3;">Source 2013 SDK branch</span>?</b><br /><br>
+                                using a custom <span style="color: #f3f3f3;">Source 2013 SDK
+                                    branch</span>?</b><br /><br>
                             <input type="radio" value="0" name="Q4" /> CS:Legacy<br />
                             <input type="radio" value="1" name="Q4" /> Apex Legends<br />
                             <input type="radio" value="2" name="Q4" /> Half-Life 3<br />
@@ -463,7 +470,8 @@
                         </li>
                         <hr>
                         <br>
-                        <li><INPUT type="text" size="1" value="" name="T5" /><b> What major drawback does <span style="color: #d3e66b;">Apex Legends</span>
+                        <li><INPUT type="text" size="1" value="" name="T5" /><b> What major drawback does <span
+                                    style="color: #d3e66b;">Apex Legends</span>
                                 face
                                 due to its use of the <span style="color: #f2a52b;">Source</span> engine?</b><br /><br>
                             <input type="radio" value="0" name="Q5" /> Poor AI behaviour<br />
@@ -489,6 +497,32 @@
             </form>
         </div>
 
+        <br>
+        <hr color="#b9b7b5">
+        <section style="text-align: center; margin-top: 50px;">
+            <h2 style="color: #e69138;">🎮 Source Engine Game Runtime Estimator</h2>
+            <p style="color: #b9b7b5;">Estimate how many days it'll take to finish a Source game!</p>
+
+            <label style="color: white;" for="gameHours">Estimated total game hours:</label><br>
+            <input type="number" id="gameHours" placeholder="e.g., 15"><br><br>
+
+            <label style="color: white;" for="sessionHours">Your play session length (hours/day):</label><br>
+            <input type="number" id="sessionHours" placeholder="e.g., 2"><br><br>
+
+            <div style="display: flex; justify-content: center;"><button onclick="calculateGameRuntime()"
+                    class="pseudo-button">
+                    <span style="color: black;">Estimate Time</span>
+                </button></div>
+
+            <div id="calcResult" style="margin-top: 20px; color: #d3e66b; font-size: 20px;"></div>
+        </section>
+<hr color="#b9b7b5">
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <button onclick="window.location.href='feedback.html'" class="pseudo-button">
+                <span style="color: black;">Leave Feedback</span>
+            </button>
+        </div>
+
         <section style="width: auto; margin: 1% 20%;">
             <footer>
                 <a style="color: #777366;" href="https://developer.valvesoftware.com/wiki/Main_Page">VALVe developer
@@ -497,7 +531,6 @@
                 <a href="TOS.html">Site terms of use</a>
             </footer>
         </section>
-
 </body>
 
 </html>
